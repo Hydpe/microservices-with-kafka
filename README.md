@@ -19,28 +19,28 @@ in Body ->form Data
 
 # On OrderService Side
  # SAMPLE OUTPUT
- # Order sent to order-topic with id: 300
-# Receive ACK Acknowledgement from PaymentService payment sucessfull with Id300
-# Order sent to order-topic with id: 400
-# Receive ACK Acknowledgement from PaymentService payment sucessfull with Id400
-# Order sent to order-topic with id: 500
-# Receive ACK Acknowledgement from PaymentService payment sucessfull with Id500
+ Order sent to order-topic with id: 300
+ Receive ACK Acknowledgement from PaymentService payment sucessfull with Id300
+ Order sent to order-topic with id: 400
+ Receive ACK Acknowledgement from PaymentService payment sucessfull with Id400
+ Order sent to order-topic with id: 500
+ Receive ACK Acknowledgement from PaymentService payment sucessfull with Id500
 
 
 # On PyamentService Side
 # SAMPLE OUTPUT
-# Received Order from Order-topic: 400
-# Received Order Name: Hp
-# Received Order Price: 40000.0
-# File saved to receiveded_icon128.png     
-# Pay Rupees 40000.0
-# 40000
-# Received Order from Order-topic: 500
-# Received Order Name: Hp
-# Received Order Price: 60000.0
-# File saved to receiveded_icon128.png
-# Pay Rupees 60000.0
-# 60000
+ Received Order from Order-topic: 400
+ Received Order Name: Hp
+ Received Order Price: 40000.0
+ File saved to receiveded_icon128.png     
+ Pay Rupees 40000.0
+ 40000
+ Received Order from Order-topic: 500
+ Received Order Name: Hp
+ Received Order Price: 60000.0
+ File saved to receiveded_icon128.png
+ Pay Rupees 60000.0
+ 60000
 
 Technologies Used
 1) Java version 21
