@@ -5,7 +5,7 @@ This Project demonstrates Inter Service Communication using kafka in between two
 1) Order Service acts as producer (send orders to paymentService with or without image file .png)
 2) Payment Service acts as consumer(Receives Orders , process Payment and Acknowledge producer As succesfull Payment for the received Order)
 
-Sample Output for the Project
+# Sample Output for the Project
 
 # In Postman 
 Post http://localhost:8081/Order/upload
@@ -19,28 +19,29 @@ in Body ->form Data
 
 # On OrderService Side
  # SAMPLE OUTPUT
-Order sent to order-topic with id: 300
-Receive ACK Acknowledgement from PaymentService payment sucessfull with Id300
-Order sent to order-topic with id: 400
-Receive ACK Acknowledgement from PaymentService payment sucessfull with Id400
-Order sent to order-topic with id: 500
-Receive ACK Acknowledgement from PaymentService payment sucessfull with Id500
+ # Order sent to order-topic with id: 300
+# Receive ACK Acknowledgement from PaymentService payment sucessfull with Id300
+# Order sent to order-topic with id: 400
+# Receive ACK Acknowledgement from PaymentService payment sucessfull with Id400
+# Order sent to order-topic with id: 500
+# Receive ACK Acknowledgement from PaymentService payment sucessfull with Id500
+
 
 # On PyamentService Side
+# SAMPLE OUTPUT
+# Received Order from Order-topic: 400
+# Received Order Name: Hp
+# Received Order Price: 40000.0
+# File saved to receiveded_icon128.png     
+# Pay Rupees 40000.0
+# 40000
+# Received Order from Order-topic: 500
+# Received Order Name: Hp
+# Received Order Price: 60000.0
+# File saved to receiveded_icon128.png
+# Pay Rupees 60000.0
+# 60000
 
- # SAMPLE OUTPUT
-Received Order from Order-topic: 400
-Received Order Name: Hp
-Received Order Price: 40000.0
-File saved to receiveded_icon128.png     
-Pay Rupees 40000.0
-40000
-Received Order from Order-topic: 500
-Received Order Name: Hp
-Received Order Price: 60000.0
-File saved to receiveded_icon128.png
-Pay Rupees 60000.0
-60000
 Technologies Used
 1) Java version 21
 2) SpringBoot version 3X
